@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:wght@400;600;700;900&family=Oleo+Script+Swash+Caps:wght@400;700&family=Oleo+Script:wght@400;700&family=Roboto+Slab:wght@300;400;600;700;900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,900&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+  <link rel="icon" href="images/favicon.ico">
+  <title>பார்கவகுல மூப்பனார் சங்கம்</title>
+</head>
+
+<body class="">
+
+  <div class="container mt-5 mb-5">
+
+
+    <!-- Heading Section -->
+
+    <header class="head col-12 g-3 text-center  p-3 mt-5 shadow-lg rounded">
+      <div>
+        <img  src="images/parkavakula moopanar.jpeg">
+        <h1 class="heading_sections text-danger text-center">Parkavakula Moopanaar Sangam</h1>
+        <h1 class="heading_section1 heading_section mt-5 text-success text-center fw-bold">பார்கவகுல மூப்பனார் சங்கம் </h1>
+      </div>
+      <div class="mt-5">
+        <h2 class="text-center text-danger fw-bold">Membership Form - 2023</h2>
+        <h2 class=" heading_section1 text-center text-success mt-5 mb-4 fw-bold">உறுப்பினர் சேர்க்கை படிவம் - 2023</h2>
+      </div>
+    </header>
+    
+    <form name="submit-to-google-sheet" class="form_style row mt-5 shadow-lg p-3 mb-5 mt-5  text-dark rounded">
+
+
+      <!-- Members Personal Details -->
+
+
+
+      <h3 class="details fw-bold bg-success p-3 mt-3">சொந்த விவரங்கள்/Personal Details</h3>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">முதற் பெயர்/First Name<sup>*</sup></label>
+        <input type="text" class="form-control " name="first_name" required>
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">கடைசிபெயர்/Last Name<sup>*</sup></label>
+        <input type="text" class="form-control " name="last_name" required>
+      </div>
+      <div class="input-field">
+        <label for="inputAddress" class="form-label">பிறந்ததேதி /Date of Birth<sup>*</sup></label>
+        <input type="date" class="form-control " name="dateOfBirth" required>
+      </div>
+
+      <div class="input-field">
+        <label for="inputAddress" class="form-label">பாலினம்/Sex<sup>*</sup></label>
+        <select class="form-control " name="sex" required>
+          <option disabled selected></option>
+          <option>ஆண்/Male</option>
+          <option>பெண்/Female</option>
+          <option>இதர/Others</option>
+        </select>
+      </div>
+
+      <div class="input-field">
+        <label for="inputAddress" class="form-label">தொழில் /Occupation<sup>*</sup></label>
+        <!-- <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        சுயதொழில்/Self Employee
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        தனியார்/Private
+                    </label>
+                  </div>
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        அரசு/Public
+                    </label>
+                  </div>
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        இதர/Others
+                    </label>
+                  </div> -->
+        <select class="form-control " name="occupation" required>
+          <option disabled selected></option>
+          <option>சுயதொழில்/Self Employee</option>
+          <option>தனியார்/Private</option>
+          <option>அரசு/Public</option>
+          <option>இதர/Others</option>
+        </select>
+      </div>
+
+      <div class="input-field">
+        <label for="inputAddress" class="form-label">மின்னஞ்சல்/Email</label>
+        <input type="text" class="form-control " id="inputAddress" name="emailId">
+      </div>
+
+      <div class="input-field">
+        <label for="inputAddress" class="form-label">தொலைபேசி எண்/Mobile Number<sup>*</sup></label>
+        <input type="number" class="form-control " name="mobile_no" required>
+      </div>
+      <div class="input-field">
+        <label for="inputAddress" class="form-label">வாட்ஸாப்ப் எண்/Whatsapp Number</label>
+        <input type="number" class="form-control " name="whatsapp_no">
+      </div>
+      <div class="input-field">
+        <label for="inputAddress" class="form-label">குடியுரிமை/Nationality</label>
+        <input type="text" id="inputCountry" class="form-control " name="nationality">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">முகவரி 1/Address Line 1<sup>*</sup></label>
+        <input type="text" class="form-control " id="inputAddress" name="address_line1" required>
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">முகவரி 2/Address Line 2<sup>*</sup></label>
+        <input type="text" class="form-control " id="inputAddress2" name="address_line2" required>
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">மாவட்டம்
+          /City</label>
+        <input type="text" class="form-control " id="inputCity" name="city">
+      </div>
+      <div class="col-md-6">
+        <label for="inputState" class="form-label">தேசியம்
+          /State</label>
+        <input type="text" id="inputState" class="form-control " name="state">
+          <!-- <option selected>Choose...</option>
+          <option>Tamil Nadu</option>
+          <option>Puduchery</option>
+          <option>Karnataka</option>
+        </select> -->
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">அஞ்சல்குறியீடு/Zip<sup>*</sup></label>
+        <input type="number" class="form-control " id="inputZip" name="zip" required>
+      </div>
+
+
+      <!-- Member Organisation Detail -->
+
+
+      <h3 class=" details mt-5 mb-4  bg-success p-3 fw-bold">நிறுவனத்தின் தகவல்/Organisation Details</h3>
+      <div class="col-md-16">
+        <label for="inputEmail4" class="form-label">நிறுவனத்தின் பெயர்/Organisation Name<sup>*</sup></label>
+        <input type="text" class="form-control " name="org_name" required>
+      </div>
+      <div class="col-md-16">
+        <label for="inputEmail4" class="form-label">நிலை/Position<sup>*</sup></label>
+        <input type="text" class="form-control " name="position" required>
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">முகவரி 1/Address Line 1<sup>*</sup></label>
+        <input type="text" class="form-control " name="address_line1" required>
+      </div>
+      <div class="col-md-6 mb-4">
+        <label for="inputEmail4" class="form-label">முகவரி 2/Address Line 2<sup>*</sup></label>
+        <input type="text" class="form-control " name="address_line2" required>
+      </div>
+      <div class="col-md-2 mb-5 zip">
+        <label for="inputZip" class="form-label">அஞ்சல்குறியீடு/Zip<sup>*</sup></label>
+        <input type="number" class="form-control " id="inputZip" name="zip" required>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary"  name="submit">சமர்ப்பிக்க/Submit</button>
+        <div class="popup"id="popup">
+          <img src="images/tick.png">
+          <h2>Thank You!</h2>
+          <p>Your details has been Successfully Submitted.Thanks!</p>
+          <img style="width: 120px;margin-left: 120px;margin-top: 20px;"
+          src="images/parkavakula moopanar.jpeg">
+          <button type="button"onclick="closePopup()">OK</button>
+        </div>
+      </div>
+      <span id="submission"></span>
+      <footer class=" footer col-16 shadow-lg  text-center text-lg-start mt-5">
+        <!-- Copyright Footer -->
+        <div class="text-center text-dark p-2">
+          &copy; 2023 <p class="text-danger text-center fs-6 fw-bold">Parkavakula Moopanaar Sangam</p>All Right Reserved:
+          <p class="text-dark">Developed and Managed By: <a class=" hovering text-danger fw-bold" href="http://www.higglerslab.com"
+              target="_blank"><b>
+                Higglerslab Solutions</b></a>
+          </p>
+          </p>
+        </div>
+        <!-- Copyright Footer-->
+      </footer>
+    </form>
+    
+  </div>
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script> -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxCEGCad3Yp7UKc5v-asYhL3X2bYfp9EK7xu_wuPPWY3pcXrGoELV0cZeCTF3XXEedp/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const submission = document.getElementById("submission")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+        submission.innerHTML=""
+        openPopup()
+        setTimeout(function(){
+          submission.innerHTML=""
+        },5000)
+        form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+    // let popup=document.getElementById("popup");
+
+    // function openPopup(){
+    //   if (popup.innerHTML.trim() === '') {
+    //     alert("Your field Is Empty!...");
+    //     return;
+    //   }
+
+    //   popup.classList.add("open-popup")
+    // }
+
+    // function closePopup(){
+    //   popup.classList.remove("open-popup")
+    // }
+    let popup = document.getElementById("popup");
+    function openPopup() {
+      popup.classList.add("open-popup");
+    }
+    function closePopup() {
+      popup.classList.remove("open-popup");
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:wght@400;600;700;900&family=Oleo+Script+Swash+Caps:wght@400;700&family=Oleo+Script:wght@400;700&family=Roboto+Slab:wght@300;400;600;700;900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,900&display=swap");
+
+.container {
+  width: 60%;
+  height: 1900px;
+  /* background-color: #ffffff; */
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 130%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  background-color: rgba(32, 31, 31, 0.055);
+  font-family: "Merriweather", serif;
+  font-size: 12px;
+}
+
+header {
+  font-family: "Oleo Script Swash Caps", cursive;
+  margin-bottom: -46px;
+  width: -100px;
+}
+
+.heading_section1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 29px;
+}
+.details{
+    color: #F2E94E;
+}
+img {
+  float: left;
+  margin-top: 10px;
+  width: 164px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.head {
+  background-color: rgb(245, 218, 195);
+}
+
+label {
+  margin-top: 15px;
+}
+.zip {
+  margin-top: -18px;
+}
+/* .heading_section{
+    text-align: center;
+    margin-top: -180px;
+} */
+.form-control {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #555;
+  color: #fff;
+  background-color: #e9e3d8;
+}
+
+.form-select {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #555;
+}
+sup {
+  font-size: 12px;
+  color: red;
+}
+.btn-primary {
+  border-radius: 0;
+  background-color: #e74c3c;
+  border: none;
+}
+.footer{
+    background-color: #e9e3d8;
+}
+.popup {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+  text-align: center;
+}
+.popup p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+}
+.popup button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background-color: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#submission {
+  margin-top: 10px;
+  font-size: 12px;
+  color: rgba(233, 17, 143, 0.774);
+  display: block;
+  font-family: "Roboto Slab", serif;
+}
+.hovering {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 900
+}
+.hovering :hover {
+  color: #28a745;
+  ;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    margin-top: 30px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    padding-bottom: 40px;
+  }
+  .popup{
+    top: 70%;
+  }
+}
